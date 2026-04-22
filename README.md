@@ -4,10 +4,6 @@
 
 当前版本重点服务于京东、淘宝、天猫之间的同款比价，尤其适合官方店竞品监控场景。项目采用浏览器扩展 + 本地存储的方式，不依赖后端服务，支持手动绑定同款、价格历史记录，以及浏览器开启期间的低频自动刷新。
 
-<p align="center">
-  <img src="./docs/screenshots/real-compare.png" alt="Price Compare Extension real compare screenshot" width="100%">
-</p>
-
 ## 项目定位
 
 - 面向大促期间的重点 SKU 竞品监控，而不是大规模爬取
