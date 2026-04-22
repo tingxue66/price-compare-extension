@@ -1,0 +1,63 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="historyBg" x1="152" y1="72" x2="1294" y2="824" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <filter id="historyShadow" x="90" y="78" width="1260" height="744" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="24"/>
+      <feGaussianBlur stdDeviation="28"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0901961 0 0 0 0 0.164706 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="900" rx="32" fill="url(#historyBg)"/>
+  <g filter="url(#historyShadow)">
+    <rect x="150" y="126" width="1140" height="632" rx="30" fill="#FFFFFF"/>
+    <rect x="150" y="126" width="1140" height="64" rx="30" fill="#F8FAFC"/>
+    <circle cx="190" cy="158" r="8" fill="#CBD5E1"/>
+    <circle cx="218" cy="158" r="8" fill="#CBD5E1"/>
+    <circle cx="246" cy="158" r="8" fill="#CBD5E1"/>
+
+    <text x="198" y="246" fill="#0F172A" font-size="34" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">Price history</text>
+    <text x="198" y="286" fill="#64748B" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">Track local price changes, compare recent platform snapshots, and review individual records.</text>
+
+    <rect x="198" y="322" width="676" height="286" rx="26" fill="#F8FAFC"/>
+    <path d="M240 556H834" stroke="#CBD5E1" stroke-width="2"/>
+    <path d="M240 500H834" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M240 444H834" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M240 388H834" stroke="#E2E8F0" stroke-width="2"/>
+    <path d="M252 512C322 496 372 430 442 446C512 462 554 388 626 406C698 424 752 472 822 448" stroke="#2563EB" stroke-width="6" stroke-linecap="round"/>
+    <path d="M252 536C322 548 372 486 442 500C512 514 554 448 626 458C698 468 752 516 822 494" stroke="#EA580C" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="252" cy="512" r="6" fill="#2563EB"/>
+    <circle cx="442" cy="446" r="6" fill="#2563EB"/>
+    <circle cx="626" cy="406" r="6" fill="#2563EB"/>
+    <circle cx="822" cy="448" r="6" fill="#2563EB"/>
+    <circle cx="252" cy="536" r="6" fill="#EA580C"/>
+    <circle cx="442" cy="500" r="6" fill="#EA580C"/>
+    <circle cx="626" cy="458" r="6" fill="#EA580C"/>
+    <circle cx="822" cy="494" r="6" fill="#EA580C"/>
+    <rect x="244" y="342" width="90" height="26" rx="13" fill="#DBEAFE"/>
+    <text x="289" y="360" text-anchor="middle" fill="#1D4ED8" font-size="14" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">JD</text>
+    <rect x="350" y="342" width="104" height="26" rx="13" fill="#FFEDD5"/>
+    <text x="402" y="360" text-anchor="middle" fill="#C2410C" font-size="14" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">TMALL</text>
+
+    <rect x="904" y="322" width="338" height="126" rx="24" fill="#EFF6FF"/>
+    <text x="934" y="360" fill="#0F172A" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Lowest price</text>
+    <text x="934" y="408" fill="#1D4ED8" font-size="40" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">¥ 4199</text>
+
+    <rect x="904" y="466" width="338" height="126" rx="24" fill="#FFF7ED"/>
+    <text x="934" y="504" fill="#0F172A" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Latest snapshot</text>
+    <text x="934" y="552" fill="#C2410C" font-size="40" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">JD ¥4299 / TMALL ¥4199</text>
+
+    <rect x="198" y="636" width="1044" height="82" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <text x="228" y="670" fill="#0F172A" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Recent records</text>
+    <text x="228" y="699" fill="#64748B" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">04-22 18:36 · TMALL · ¥4199</text>
+    <text x="500" y="699" fill="#64748B" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">04-22 18:35 · JD · ¥4299</text>
+    <text x="748" y="699" fill="#64748B" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">04-21 23:20 · TMALL · ¥4299</text>
+  </g>
+</svg>

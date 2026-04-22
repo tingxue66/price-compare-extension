@@ -1,0 +1,59 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="compareBg" x1="140" y1="70" x2="1314" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EFF6FF"/>
+    </linearGradient>
+    <filter id="compareShadow" x="78" y="72" width="1284" height="772" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="24"/>
+      <feGaussianBlur stdDeviation="28"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.0901961 0 0 0 0 0.164706 0 0 0 0.1 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="900" rx="32" fill="url(#compareBg)"/>
+  <g filter="url(#compareShadow)">
+    <rect x="134" y="120" width="1172" height="660" rx="30" fill="#FFFFFF"/>
+    <rect x="134" y="120" width="1172" height="64" rx="30" fill="#F8FAFC"/>
+    <circle cx="174" cy="152" r="8" fill="#CBD5E1"/>
+    <circle cx="202" cy="152" r="8" fill="#CBD5E1"/>
+    <circle cx="230" cy="152" r="8" fill="#CBD5E1"/>
+    <rect x="282" y="138" width="240" height="28" rx="14" fill="#E2E8F0"/>
+
+    <rect x="174" y="222" width="246" height="496" rx="24" fill="#F8FAFC"/>
+    <rect x="204" y="252" width="186" height="186" rx="22" fill="#E2E8F0"/>
+    <text x="204" y="482" fill="#0F172A" font-size="28" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">Current product</text>
+    <text x="204" y="522" fill="#334155" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">vivo X300s</text>
+    <text x="204" y="550" fill="#64748B" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">Auto-detected from active tab</text>
+    <text x="204" y="608" fill="#1D4ED8" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">JD official store</text>
+    <text x="204" y="654" fill="#0F172A" font-size="42" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">¥ 4299</text>
+
+    <text x="470" y="252" fill="#0F172A" font-size="34" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">Compare view</text>
+    <text x="470" y="292" fill="#64748B" font-size="18" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">Recognize the current product, jump to another platform, and add it to watchlist.</text>
+
+    <rect x="470" y="338" width="300" height="170" rx="26" fill="#2563EB"/>
+    <text x="502" y="380" fill="#DBEAFE" font-size="20" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Cross-platform search</text>
+    <text x="502" y="438" fill="#FFFFFF" font-size="32" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">Search same SKU</text>
+    <rect x="502" y="458" width="118" height="34" rx="17" fill="#BFDBFE" fill-opacity="0.32"/>
+    <text x="561" y="480" text-anchor="middle" fill="#FFFFFF" font-size="15" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">JD / Taobao / Tmall</text>
+
+    <rect x="792" y="338" width="300" height="170" rx="26" fill="#EA580C"/>
+    <text x="824" y="380" fill="#FFEDD5" font-size="20" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Store workflow</text>
+    <text x="824" y="438" fill="#FFFFFF" font-size="32" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">Search official store</text>
+    <rect x="824" y="458" width="122" height="34" rx="17" fill="#FDBA74" fill-opacity="0.32"/>
+    <text x="885" y="480" text-anchor="middle" fill="#FFFFFF" font-size="15" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Bind by current page</text>
+
+    <rect x="470" y="544" width="622" height="140" rx="24" fill="#F8FAFC"/>
+    <text x="500" y="584" fill="#0F172A" font-size="24" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="800">Quick actions</text>
+    <rect x="500" y="610" width="154" height="40" rx="20" fill="#E5E7EB"/>
+    <rect x="670" y="610" width="166" height="40" rx="20" fill="#DBEAFE"/>
+    <rect x="852" y="610" width="170" height="40" rx="20" fill="#FFEDD5"/>
+    <text x="577" y="636" text-anchor="middle" fill="#0F172A" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Extract current tab</text>
+    <text x="753" y="636" text-anchor="middle" fill="#1D4ED8" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Search same product</text>
+    <text x="937" y="636" text-anchor="middle" fill="#C2410C" font-size="16" font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif" font-weight="700">Add to watchlist</text>
+  </g>
+</svg>
