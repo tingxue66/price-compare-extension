@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电商比价助手</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="tabs">
+    <button class="tab active" data-tab="compare">比价</button>
+    <button class="tab" data-tab="watchlist">清单</button>
+    <button class="tab" data-tab="history">历史</button>
+  </nav>
+
+  <div id="tab-compare" class="tab-content active">
+    <div id="no-product" class="empty-state">
+      <div class="empty-icon">🛍</div>
+      <p>当前标签页还没有识别到商品</p>
+      <p class="sub">打开京东、淘宝或天猫商品页后再试一次</p>
+      <button id="btn-manual-extract" class="btn btn-outline">手动提取当前页商品</button>
+      <button id="btn-diagnose" class="btn btn-sm btn-outline" style="margin-top:8px">诊断当前页</button>
+    </div>
+
+    <div
+      id="diagnose-result"
+      class="hidden"
+      style="margin-top:12px;background:#fff;border-radius:8px;padding:10px;font-size:11px;max-height:300px;overflow:auto;white-space:pre-wrap;word-break:break-all;color:#666;"
+    ></div>
+
+    <div id="product-info" class="hidden">
+      <div class="product-card">
+        <img id="product-img" class="product-img" src="" alt="">
+        <div class="product-detail">
+          <h3 id="product-title" class="product-title"></h3>
+          <div class="product-meta">
+            <span id="product-platform" class="platform-tag"></span>
+            <span id="product-store" class="store-name"></span>
+          </div>
+          <div class="price-row">
+            <span class="price-label">当前价格</span>
+            <span id="product-price" class="price-value"></span>
+            <span id="product-original-price" class="price-original"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="action-group">
+        <button id="btn-search-jd" class="btn btn-jd hidden">搜京东同款</button>
+        <button id="btn-search-taobao" class="btn btn-taobao hidden">搜淘宝/天猫同款</button>
+      </div>
+
+      <div id="store-search-group" class="action-group hidden">
+        <button id="btn-store-jd" class="btn btn-jd-outline hidden">搜京东同店</button>
+        <button id="btn-store-taobao" class="btn btn-taobao-outline hidden">搜淘宝/天猫同店</button>
+      </div>
+
+      <div class="action-group">
+        <button id="btn-add-watchlist" class="btn btn-outline">加入清单</button>
+      </div>
+
+      <div id="compare-history" class="compare-section hidden">
+        <h4>最近比价记录</h4>
+        <div id="compare-records"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tab-watchlist" class="tab-content hidden">
+    <div class="watchlist-header">
+      <h4>关注清单</h4>
+      <button id="btn-add-manual" class="btn btn-sm btn-outline">手动添加</button>
+    </div>
+
+    <div id="manual-add-form" class="form-section hidden">
+      <input id="input-keyword" type="text" placeholder="输入商品名称关键词" class="input">
+      <button id="btn-confirm-add" class="btn btn-primary btn-sm">添加</button>
+    </div>
+
+    <div id="watchlist-refresh-panel"></div>
+
+    <div id="watchlist-empty" class="empty-state">
+      <div class="empty-icon">📵</div>
+      <p>清单为空</p>
+      <p class="sub">在商品页点击「加入清单」添加</p>
+    </div>
+
+    <div id="watchlist-items"></div>
+  </div>
+
+  <div id="tab-history" class="tab-content hidden">
+    <div class="history-header">
+      <select id="history-select" class="select">
+        <option value="">选择商品查看历史</option>
+      </select>
+    </div>
+
+    <div id="history-empty" class="empty-state">
+      <div class="empty-icon">📈</div>
+      <p>还没有价格历史</p>
+      <p class="sub">浏览商品页后会自动记录价格变化</p>
+    </div>
+
+    <div id="history-content" class="hidden">
+      <div class="chart-container">
+        <canvas id="price-chart"></canvas>
+      </div>
+      <div id="history-stats" class="stats-section"></div>
+      <div id="history-records" class="records-list"></div>
+    </div>
+  </div>
+
+  <script src="lib/chart.umd.min.js"></script>
+  <script src="../utils/platform.js"></script>
+  <script src="../utils/storage.js"></script>
+  <script src="components/product-card.js"></script>
+  <script src="components/price-chart.js"></script>
+  <script src="components/watchlist.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

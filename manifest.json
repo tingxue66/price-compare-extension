@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "电商比价助手",
+  "version": "1.0.0",
+  "description": "京东/淘宝商品价格对比工具，支持实时比价、关注清单和价格历史追踪",
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "storage",
+    "sidePanel",
+    "tabs"
+  ],
+  "host_permissions": [
+    "*://*.jd.com/*",
+    "*://*.taobao.com/*",
+    "*://*.tmall.com/*"
+  ],
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.jd.com/*",
+        "*://item.jd.com/*",
+        "*://product.jd.com/*"
+      ],
+      "js": ["content/common.js", "content/jd.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*.taobao.com/*",
+        "*://detail.tmall.com/*",
+        "*://*.tmall.com/*"
+      ],
+      "js": ["content/common.js", "content/taobao.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "电商比价助手"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
